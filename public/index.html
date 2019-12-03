@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Heroes</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <h2>Heroes list</h2>
+
+    <form name="heroForm">
+        <input type="hidden" name="id" value="0" />
+        <div>
+            <label for="name">Name:</label>
+            <input name="name" />
+        </div>
+        <div>
+            <label for="power">Power:</label>
+            <input name="power" />
+        </div>
+        <div>
+            <button type="submit">Save</button>
+            <a id="reset">Reset</a>
+        </div>
+    </form>
+
+    <table id="heroes" class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Power</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
